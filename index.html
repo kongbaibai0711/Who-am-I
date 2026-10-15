@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賴愉昀的個人自我介紹網站</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
+                Yu-Yun Lai
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">關於我</a>
+                <a href="#traits" class="hover:text-indigo-600 transition-colors">個人特質</a>
+                <a href="#interests" class="hover:text-indigo-600 transition-colors">興趣與專長</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">聯絡方式</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-600 hover:text-indigo-600 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile dropdown menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-sm text-slate-600 hover:text-indigo-600">關於我</a>
+            <a href="#traits" class="block text-sm text-slate-600 hover:text-indigo-600">個人特質</a>
+            <a href="#interests" class="block text-sm text-slate-600 hover:text-indigo-600">興趣與專長</a>
+            <a href="#contact" class="block text-sm text-slate-600 hover:text-indigo-600">聯絡方式</a>
+        </div>
+    </header>
+
+    <section id="hero" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-indigo-50/50 via-white to-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-sparkles"></i> Welcome to my space
+                </div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                    你好，我是 <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">賴愉昀</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    歡迎來到我的個人專屬空間。這裡紀錄了我的獨特風格、生活態度、以及我所熱愛的事物。很高興能以這種數位化的方式向你自我介紹！
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#about" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-medium text-sm transition shadow-lg shadow-indigo-200">
+                        深入了解我 <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl border border-slate-200 hover:border-slate-300 bg-white text-slate-700 font-medium text-sm transition">
+                        與我聯繫
+                    </a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-3xl bg-gradient-to-tr from-indigo-500 to-violet-500 p-2 shadow-2xl rotate-3 hover:rotate-0 transition duration-500">
+                    <div class="w-full h-full bg-white rounded-2xl flex flex-col items-center justify-center p-8 text-center bg-cover bg-center" style="background-image: url('https://placehold.co/400x400/e0e7ff/4f46e5?text=Yu-Yun+Lai');">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent rounded-2xl flex flex-col justify-end p-6 text-white">
+                            <span class="text-xl font-bold">賴愉昀</span>
+                            <span class="text-xs text-indigo-200">探索無限可能的人生旅程</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">關於愉昀</h2>
+                <p class="text-slate-600">認識我的核心價值觀與生活哲學</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">積極進取</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        面對挑戰總是保持好奇心與學習熱忱，不斷拓展自己的邊界，尋求更好的解決方案。
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-violet-100 text-violet-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">真誠溫暖</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        重視人與人之間的真誠互動與情感連結，樂於傾聽並給予周遭朋友支持與陪伴。
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-6 font-bold">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">獨立思考</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        擁有敏銳的觀察力與獨立判斷能力，能夠在複雜的情境中理清頭緒，做出明智選擇。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="traits" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">個人特質與風格</h2>
+                <p class="text-slate-600">展現真實自我，點亮獨特光芒</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
+                    <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl text-lg">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1">樂觀開朗</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">總是以正向的態度面對生活中的起伏，帶給身邊的人滿滿的活力與溫暖正能量。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
+                    <div class="p-3 bg-violet-50 text-violet-600 rounded-xl text-lg">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1">細心敏銳</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">注重細節，善於察覺他人忽略的事物，無論在生活或事物處理上都井然有序。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
+                    <div class="p-3 bg-indigo-50 text-indigo-600 rounded-xl text-lg">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1">持續成長</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">相信每一次的經歷都是學習的機會，追求自我精進，每天都比昨天更好一點。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm flex items-start gap-4">
+                    <div class="p-3 bg-violet-50 text-violet-600 rounded-xl text-lg">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1">善於溝通</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">具備良好的表達與協調能力，能有效傳遞想法，促進人際間的和諧與合作。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">興趣與熱情</h2>
+                <p class="text-slate-600">豐富多采的生活，探索無限可能</p>
+            </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 h-64 flex flex-col justify-end p-6">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://placehold.co/400x500/312e81/ffffff?text=Reading');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-book-open text-indigo-400 text-2xl mb-2"></i>
+                        <h3 class="text-lg font-bold text-white mb-1">閱讀與吸收新知</h3>
+                        <p class="text-xs text-slate-300">透過書籍與世界對話，開闊視野。</p>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 h-64 flex flex-col justify-end p-6">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://placehold.co/400x500/4c1d95/ffffff?text=Travel');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-plane text-violet-400 text-2xl mb-2"></i>
+                        <h3 class="text-lg font-bold text-white mb-1">探索世界</h3>
+                        <p class="text-xs text-slate-300">走訪不同角落，體驗多元文化與風景。</p>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 h-64 flex flex-col justify-end p-6">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://placehold.co/400x500/1e1b4b/ffffff?text=Music');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-headphones text-indigo-400 text-2xl mb-2"></i>
+                        <h3 class="text-lg font-bold text-white mb-1">音樂與藝術</h3>
+                        <p class="text-xs text-slate-300">用旋律放鬆身心，感受生活中的美好。</p>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 h-64 flex flex-col justify-end p-6">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-70 group-hover:scale-110 transition duration-500" style="background-image: url('https://placehold.co/400x500/3b82f6/ffffff?text=Life');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-mug-hot text-violet-400 text-2xl mb-2"></i>
+                        <h3 class="text-lg font-bold text-white mb-1">品味質感生活</h3>
+                        <p class="text-xs text-slate-300">享受咖啡香，體驗溫馨的生活小確幸。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">與我聯繫</h2>
+                <p class="text-slate-600">很高興能與你交流，歡迎隨時傳送訊息給我！</p>
+            </div>
+            <div class="bg-white p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl max-w-xl mx-auto space-y-6">
+                <div class="flex items-center justify-center gap-4 text-slate-700">
+                    <div class="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-400 font-medium uppercase">Email</span>
+                        <span class="font-semibold text-slate-800">yuyun.lai@example.com</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-4 text-slate-700">
+                    <div class="w-12 h-12 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="block text-xs text-slate-400 font-medium uppercase">Location</span>
+                        <span class="font-semibold text-slate-800">Taiwan</span>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-100 flex justify-center gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-600 flex items-center justify-center transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-600 flex items-center justify-center transition">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-600 flex items-center justify-center transition">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-white border-t border-slate-100 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Yu-Yun Lai. All Rights Reserved. Crafted with AI & Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking menu links
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
